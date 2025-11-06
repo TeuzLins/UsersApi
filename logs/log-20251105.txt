@@ -1,0 +1,235 @@
+2025-11-05 16:09:31.566 -03:00 [INF] User profile is available. Using 'C:\Users\extre\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-05 16:09:32.437 -03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-11-05 16:09:32.473 -03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsLock' AND "type" = 'table';
+2025-11-05 16:09:32.484 -03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT OR IGNORE INTO "__EFMigrationsLock"("Id", "Timestamp") VALUES(1, '2025-11-05 19:09:32.4797826+00:00');
+SELECT changes();
+2025-11-05 16:09:32.543 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" TEXT NOT NULL CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY,
+    "ProductVersion" TEXT NOT NULL
+);
+2025-11-05 16:09:32.559 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2025-11-05 16:09:32.565 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-11-05 16:09:32.576 -03:00 [INF] No migrations were applied. The database is already up to date.
+2025-11-05 16:09:32.581 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "__EFMigrationsLock";
+2025-11-05 16:09:32.866 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-11-05 16:09:32.877 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-11-05 16:09:32.978 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 36), @p1='?', @p2='?' (Size = 5), @p3='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetRoles" ("Id", "ConcurrencyStamp", "Name", "NormalizedName")
+VALUES (@p0, @p1, @p2, @p3);
+2025-11-05 16:09:32.987 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-11-05 16:09:32.990 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-11-05 16:09:32.995 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 36), @p1='?', @p2='?' (Size = 4), @p3='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetRoles" ("Id", "ConcurrencyStamp", "Name", "NormalizedName")
+VALUES (@p0, @p1, @p2, @p3);
+2025-11-05 16:09:33.192 -03:00 [INF] Creating key {9fff6b19-b00f-425f-8afc-553f3c756449} with creation date 2025-11-05 19:09:33Z, activation date 2025-11-05 19:09:33Z, and expiration date 2026-02-03 19:09:33Z.
+2025-11-05 16:09:33.211 -03:00 [INF] Writing data to file 'C:\Users\extre\AppData\Local\ASP.NET\DataProtection-Keys\key-9fff6b19-b00f-425f-8afc-553f3c756449.xml'.
+2025-11-05 16:09:33.370 -03:00 [INF] Now listening on: http://localhost:5295
+2025-11-05 16:09:33.373 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-05 16:09:33.375 -03:00 [INF] Hosting environment: Development
+2025-11-05 16:09:33.376 -03:00 [INF] Content root path: C:\Users\extre\OneDrive\Desktop\C#\UsersApi
+2025-11-05 16:09:57.874 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/?ide_webview_request_time=1762369797729 - null null
+2025-11-05 16:09:57.905 -03:00 [WRN] Failed to determine the https port for redirect.
+2025-11-05 16:09:57.977 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/?ide_webview_request_time=1762369797729 - 404 0 null 104.1174ms
+2025-11-05 16:09:57.988 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5295/, Response status code: 404
+2025-11-05 16:09:58.924 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/@vite/client - null null
+2025-11-05 16:09:58.930 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/@vite/client - 404 0 null 5.8214ms
+2025-11-05 16:09:58.935 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5295/@vite/client, Response status code: 404
+2025-11-05 16:11:05.900 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/?ide_webview_request_time=1762369797729 - null null
+2025-11-05 16:11:05.904 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/?ide_webview_request_time=1762369797729 - 404 0 null 3.8809ms
+2025-11-05 16:11:05.907 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5295/, Response status code: 404
+2025-11-05 16:11:05.931 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/@vite/client - null null
+2025-11-05 16:11:05.934 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/@vite/client - 404 0 null 2.7476ms
+2025-11-05 16:11:05.937 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5295/@vite/client, Response status code: 404
+2025-11-05 16:11:20.069 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/ - null null
+2025-11-05 16:11:20.072 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/ - 404 0 null 3.4538ms
+2025-11-05 16:11:20.076 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5295/, Response status code: 404
+2025-11-05 16:16:52.820 -03:00 [INF] User profile is available. Using 'C:\Users\extre\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-05 16:16:53.256 -03:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-11-05 16:16:53.283 -03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsLock' AND "type" = 'table';
+2025-11-05 16:16:53.294 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT OR IGNORE INTO "__EFMigrationsLock"("Id", "Timestamp") VALUES(1, '2025-11-05 19:16:53.2897901+00:00');
+SELECT changes();
+2025-11-05 16:16:53.338 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" TEXT NOT NULL CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY,
+    "ProductVersion" TEXT NOT NULL
+);
+2025-11-05 16:16:53.349 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2025-11-05 16:16:53.353 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-11-05 16:16:53.361 -03:00 [INF] No migrations were applied. The database is already up to date.
+2025-11-05 16:16:53.365 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "__EFMigrationsLock";
+2025-11-05 16:16:53.557 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-11-05 16:16:53.587 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2025-11-05 16:16:53.735 -03:00 [INF] Now listening on: http://localhost:5295
+2025-11-05 16:16:53.738 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-05 16:16:53.739 -03:00 [INF] Hosting environment: Development
+2025-11-05 16:16:53.740 -03:00 [INF] Content root path: C:\Users\extre\OneDrive\Desktop\C#\UsersApi
+2025-11-05 16:16:58.650 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/?ide_webview_request_time=1762370218602 - null null
+2025-11-05 16:16:58.717 -03:00 [WRN] Failed to determine the https port for redirect.
+2025-11-05 16:16:58.746 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/?ide_webview_request_time=1762370218602 - 404 0 null 98.3866ms
+2025-11-05 16:16:58.756 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5295/, Response status code: 404
+2025-11-05 16:16:59.276 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/@vite/client - null null
+2025-11-05 16:16:59.282 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/@vite/client - 404 0 null 6.779ms
+2025-11-05 16:16:59.286 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5295/@vite/client, Response status code: 404
+2025-11-05 16:17:16.530 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/?ide_webview_request_time=1762370236526 - null null
+2025-11-05 16:17:16.534 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/?ide_webview_request_time=1762370236526 - 404 0 null 3.7885ms
+2025-11-05 16:17:16.536 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5295/, Response status code: 404
+2025-11-05 16:17:16.561 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/@vite/client - null null
+2025-11-05 16:17:16.563 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/@vite/client - 404 0 null 2.5704ms
+2025-11-05 16:17:16.566 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5295/@vite/client, Response status code: 404
+2025-11-05 16:17:38.901 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/swagger - null null
+2025-11-05 16:17:38.905 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/swagger - 301 0 null 4.4648ms
+2025-11-05 16:17:38.915 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/swagger/index.html - null null
+2025-11-05 16:17:38.973 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/swagger/index.html - 200 null text/html;charset=utf-8 58.3271ms
+2025-11-05 16:17:39.030 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/swagger/swagger-ui.css - null null
+2025-11-05 16:17:39.030 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/swagger/index.css - null null
+2025-11-05 16:17:39.031 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/swagger/swagger-ui-bundle.js - null null
+2025-11-05 16:17:39.032 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/swagger/swagger-ui-standalone-preset.js - null null
+2025-11-05 16:17:39.033 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/swagger/index.js - null null
+2025-11-05 16:17:39.044 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/swagger/index.css - 200 152 text/css 14.0621ms
+2025-11-05 16:17:39.044 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/swagger/swagger-ui.css - 200 23647 text/css 14.1558ms
+2025-11-05 16:17:39.044 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/swagger/index.js - 200 null application/javascript;charset=utf-8 11.5914ms
+2025-11-05 16:17:39.047 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/swagger/swagger-ui-standalone-preset.js - 200 77352 text/javascript 14.6336ms
+2025-11-05 16:17:39.089 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/swagger/swagger-ui-bundle.js - 200 424767 text/javascript 57.7695ms
+2025-11-05 16:17:39.237 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/swagger/v1/swagger.json - null null
+2025-11-05 16:17:39.252 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/swagger/favicon-32x32.png - null null
+2025-11-05 16:17:39.255 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/swagger/favicon-32x32.png - 200 628 image/png 3.1895ms
+2025-11-05 16:17:39.311 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 73.4326ms
+2025-11-05 16:18:00.573 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/ - null null
+2025-11-05 16:18:00.576 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/ - 404 0 null 2.8089ms
+2025-11-05 16:18:00.578 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5295/, Response status code: 404
+2025-11-05 16:18:18.841 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/swagger/v1/swagger.json - null null
+2025-11-05 16:18:18.847 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5.7202ms
+2025-11-05 16:18:33.280 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/swagger/v1/swagger.json - null null
+2025-11-05 16:18:33.285 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.8013ms
+2025-11-05 16:18:33.369 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/favicon.ico - null null
+2025-11-05 16:18:33.371 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/favicon.ico - 404 0 null 2.4211ms
+2025-11-05 16:18:33.374 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5295/favicon.ico, Response status code: 404
+2025-11-05 16:18:40.549 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/swagger/v1/swagger.json - null null
+2025-11-05 16:18:40.553 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.0358ms
+2025-11-05 16:18:47.588 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/?ide_webview_request_time=1762370327583 - null null
+2025-11-05 16:18:47.590 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/?ide_webview_request_time=1762370327583 - 404 0 null 2.5574ms
+2025-11-05 16:18:47.593 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5295/, Response status code: 404
+2025-11-05 16:18:47.616 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/@vite/client - null null
+2025-11-05 16:18:47.619 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/@vite/client - 404 0 null 3.257ms
+2025-11-05 16:18:47.622 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5295/@vite/client, Response status code: 404
+2025-11-05 16:18:48.389 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/?ide_webview_request_time=1762370328386 - null null
+2025-11-05 16:18:48.391 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/?ide_webview_request_time=1762370328386 - 404 0 null 1.6392ms
+2025-11-05 16:18:48.393 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5295/, Response status code: 404
+2025-11-05 16:18:48.405 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/@vite/client - null null
+2025-11-05 16:18:48.407 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/@vite/client - 404 0 null 2.3296ms
+2025-11-05 16:18:48.410 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5295/@vite/client, Response status code: 404
+2025-11-05 16:18:48.575 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/?ide_webview_request_time=1762370328573 - null null
+2025-11-05 16:18:48.577 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/?ide_webview_request_time=1762370328573 - 404 0 null 1.7407ms
+2025-11-05 16:18:48.579 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5295/, Response status code: 404
+2025-11-05 16:18:48.595 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/@vite/client - null null
+2025-11-05 16:18:48.597 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/@vite/client - 404 0 null 2.1616ms
+2025-11-05 16:18:48.599 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5295/@vite/client, Response status code: 404
+2025-11-05 16:18:48.733 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/?ide_webview_request_time=1762370328731 - null null
+2025-11-05 16:18:48.735 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/?ide_webview_request_time=1762370328731 - 404 0 null 1.9686ms
+2025-11-05 16:18:48.738 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5295/, Response status code: 404
+2025-11-05 16:18:48.764 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/@vite/client - null null
+2025-11-05 16:18:48.766 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/@vite/client - 404 0 null 1.952ms
+2025-11-05 16:18:48.769 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5295/@vite/client, Response status code: 404
+2025-11-05 16:18:49.102 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/?ide_webview_request_time=1762370329100 - null null
+2025-11-05 16:18:49.104 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/?ide_webview_request_time=1762370329100 - 404 0 null 1.6727ms
+2025-11-05 16:18:49.107 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5295/, Response status code: 404
+2025-11-05 16:18:49.119 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/@vite/client - null null
+2025-11-05 16:18:49.121 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/@vite/client - 404 0 null 1.62ms
+2025-11-05 16:18:49.123 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5295/@vite/client, Response status code: 404
+2025-11-05 16:18:49.794 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/?ide_webview_request_time=1762370329791 - null null
+2025-11-05 16:18:49.795 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/?ide_webview_request_time=1762370329791 - 404 0 null 1.6311ms
+2025-11-05 16:18:49.798 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5295/, Response status code: 404
+2025-11-05 16:18:49.810 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/@vite/client - null null
+2025-11-05 16:18:49.812 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/@vite/client - 404 0 null 2.1905ms
+2025-11-05 16:18:49.815 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5295/@vite/client, Response status code: 404
+2025-11-05 16:18:50.284 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/?ide_webview_request_time=1762370330281 - null null
+2025-11-05 16:18:50.286 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/?ide_webview_request_time=1762370330281 - 404 0 null 1.9016ms
+2025-11-05 16:18:50.288 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5295/, Response status code: 404
+2025-11-05 16:18:50.312 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/@vite/client - null null
+2025-11-05 16:18:50.315 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/@vite/client - 404 0 null 2.1486ms
+2025-11-05 16:18:50.317 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5295/@vite/client, Response status code: 404
+2025-11-05 16:18:50.455 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/?ide_webview_request_time=1762370330452 - null null
+2025-11-05 16:18:50.457 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/?ide_webview_request_time=1762370330452 - 404 0 null 2.0715ms
+2025-11-05 16:18:50.460 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5295/, Response status code: 404
+2025-11-05 16:18:50.473 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/@vite/client - null null
+2025-11-05 16:18:50.476 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/@vite/client - 404 0 null 2.9323ms
+2025-11-05 16:18:50.478 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5295/@vite/client, Response status code: 404
+2025-11-05 16:18:51.082 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/?ide_webview_request_time=1762370331080 - null null
+2025-11-05 16:18:51.084 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/?ide_webview_request_time=1762370331080 - 404 0 null 1.6787ms
+2025-11-05 16:18:51.086 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5295/, Response status code: 404
+2025-11-05 16:18:51.098 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/@vite/client - null null
+2025-11-05 16:18:51.100 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/@vite/client - 404 0 null 1.6045ms
+2025-11-05 16:18:51.102 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5295/@vite/client, Response status code: 404
+2025-11-05 16:18:51.269 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/?ide_webview_request_time=1762370331266 - null null
+2025-11-05 16:18:51.271 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/?ide_webview_request_time=1762370331266 - 404 0 null 2.081ms
+2025-11-05 16:18:51.275 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5295/, Response status code: 404
+2025-11-05 16:18:51.290 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/@vite/client - null null
+2025-11-05 16:18:51.292 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/@vite/client - 404 0 null 1.9558ms
+2025-11-05 16:18:51.294 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5295/@vite/client, Response status code: 404
+2025-11-05 16:18:51.434 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/?ide_webview_request_time=1762370331430 - null null
+2025-11-05 16:18:51.436 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/?ide_webview_request_time=1762370331430 - 404 0 null 2.4066ms
+2025-11-05 16:18:51.439 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5295/, Response status code: 404
+2025-11-05 16:18:51.455 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/@vite/client - null null
+2025-11-05 16:18:51.458 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/@vite/client - 404 0 null 2.6559ms
+2025-11-05 16:18:51.461 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5295/@vite/client, Response status code: 404
+2025-11-05 16:18:53.842 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/ - null null
+2025-11-05 16:18:53.845 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/ - 404 0 null 2.8409ms
+2025-11-05 16:18:53.848 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5295/, Response status code: 404
+2025-11-05 16:20:00.271 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/swagger?ide_webview_request_time=1762370400267 - null null
+2025-11-05 16:20:00.273 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/swagger?ide_webview_request_time=1762370400267 - 301 0 null 1.97ms
+2025-11-05 16:20:00.276 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/swagger/index.html - null null
+2025-11-05 16:20:00.279 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/swagger/index.html - 200 null text/html;charset=utf-8 2.7988ms
+2025-11-05 16:20:00.288 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/swagger/swagger-ui.css - null null
+2025-11-05 16:20:00.290 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/swagger/index.css - null null
+2025-11-05 16:20:00.291 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/swagger/swagger-ui.css - 200 23647 text/css 3.2181ms
+2025-11-05 16:20:00.293 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/swagger/index.css - 200 152 text/css 3.2109ms
+2025-11-05 16:20:00.305 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/swagger/swagger-ui-bundle.js - null null
+2025-11-05 16:20:00.308 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/swagger/swagger-ui-standalone-preset.js - null null
+2025-11-05 16:20:00.308 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/swagger/index.js - null null
+2025-11-05 16:20:00.309 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/swagger/swagger-ui-bundle.js - 200 424767 text/javascript 4.0133ms
+2025-11-05 16:20:00.311 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/swagger/swagger-ui-standalone-preset.js - 200 77352 text/javascript 3.5219ms
+2025-11-05 16:20:00.313 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/swagger/index.js - 200 null application/javascript;charset=utf-8 5.5487ms
+2025-11-05 16:20:00.698 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/swagger/v1/swagger.json - null null
+2025-11-05 16:20:00.702 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.5762ms
+2025-11-05 16:20:00.745 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5295/@vite/client - null null
+2025-11-05 16:20:00.748 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5295/@vite/client - 404 0 null 2.5925ms
+2025-11-05 16:20:00.751 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5295/@vite/client, Response status code: 404
